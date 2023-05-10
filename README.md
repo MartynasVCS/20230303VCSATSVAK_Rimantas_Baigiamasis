@@ -50,3 +50,5 @@ Final task for Automatinis Testavimas course of Code Academy, where several auto
   - **TC005.01:** Click on the region button in the top right side of navigation menu
   - **TC005.02:** Select "Latvia English/ € EUR" in the Region Selection table
   - **TC005.03:** Verify that the "Latvia English/ € EUR" region is selected
+  
+<img src="https://stormsend1.djicdn.com/tpc/uploads/carousel/image/0d6a58a5c7ee8f474e5a34113c5d6d37@ultra.jpg" alt="Image" width="300" height="300" />
