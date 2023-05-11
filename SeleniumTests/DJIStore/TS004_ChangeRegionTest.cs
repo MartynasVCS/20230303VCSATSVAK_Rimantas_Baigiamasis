@@ -10,10 +10,10 @@ namespace SeleniumTests.DJIStore
     internal class TS004_ChangeRegionTest
     {
         [Test]
-        public void TC005_ChangeTheRegionLanguageCurrency() 
+        public void TC005_ChangeTheRegionLanguageCurrency()
         {
-            
+
         }
-        
+
     }
 }

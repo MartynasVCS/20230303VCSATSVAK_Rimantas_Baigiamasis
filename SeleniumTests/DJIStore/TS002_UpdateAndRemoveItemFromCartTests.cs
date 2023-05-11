@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SeleniumTests.DJIStore
 {
-    internal class TS002_UpdateAndRemoveItemFromCastTests
+    internal class TS002_UpdateAndRemoveItemFromCartTests
     {
         [Test]
         public void TC003_UpdateDJIMini3QuantityInProductCart()

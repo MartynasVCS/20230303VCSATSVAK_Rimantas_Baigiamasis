@@ -2,10 +2,11 @@
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Support.UI;
-using SeleniumExtras.WaitHelpers;
+using System;
 
 namespace SeleniumTestsWithoutPOM
 {
+    [TestFixture]
     public class DJIStoreTestsWithoutPOM
     {
         private IWebDriver driver;
@@ -32,20 +33,22 @@ namespace SeleniumTestsWithoutPOM
             searchInput.Clear();
             searchInput.Click();
 
-            IWebElement selectDJI3Mini = wait.Until(ExpectedConditions.ElementIsVisible(By.XPath("//ul[@role='listbox']//span[contains(text(), 'DJI Mini 3')]")));
+            IWebElement selectDJI3Mini = wait.Until(driver =>
+                driver.FindElement(By.XPath("//ul[@role='listbox']//span[contains(text(), 'DJI Mini 3')]")));
             selectDJI3Mini.Click();
 
             // TC001.03: Verify that the relevant and containing "DJI Mini 3" product page was opened
-            IWebElement productTitle = wait.Until(ExpectedConditions.ElementIsVisible(By.XPath("//*[@id='anchorVersion']/h1")));
+            IWebElement productTitle = wait.Until(driver =>
+                driver.FindElement(By.XPath("//*[@id='anchorVersion']/h1")));
             string actualProductTitle = productTitle.Text;
 
             Assert.IsTrue(actualProductTitle.Contains("DJI Mini 3"), "Product page does not contain the searched product: DJI Mini 3");
         }
 
-        //[TearDown]
-        //public void TearDown()
-        //{
-        //    driver.Quit();
-        //}
+        [TearDown]
+        public void TearDown()
+        {
+            driver.Quit();
+        }
     }
 }
