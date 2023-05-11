@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33530.505
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SeleniumTests", "SeleniumTests\SeleniumTests.csproj", "{290AC0B2-F83D-40A7-B839-F881CEC3A0F4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SeleniumTests_1", "SeleniumTests\SeleniumTests_1.csproj", "{290AC0B2-F83D-40A7-B839-F881CEC3A0F4}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SeleniumFramework", "SeleniumFramework\SeleniumFramework.csproj", "{921F04F6-A060-40A7-BD2E-050A4ADF1521}"
 EndProject
