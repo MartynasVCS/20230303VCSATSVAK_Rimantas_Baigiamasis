@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SeleniumTests", "SeleniumTe
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SeleniumFramework", "SeleniumFramework\SeleniumFramework.csproj", "{921F04F6-A060-40A7-BD2E-050A4ADF1521}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeleniumTestsWithoutPOM", "SeleniumTestsWithoutPOM\SeleniumTestsWithoutPOM.csproj", "{74FC988F-0632-4089-8A41-110868777BD0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeleniumTestsWithoutPOM", "SeleniumTestsWithoutPOM_1\SeleniumTestsWithoutPOM.csproj", "{A3D1FA84-A916-440D-81DF-72E911EB4B69}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,10 @@ Global
 		{921F04F6-A060-40A7-BD2E-050A4ADF1521}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{921F04F6-A060-40A7-BD2E-050A4ADF1521}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{921F04F6-A060-40A7-BD2E-050A4ADF1521}.Release|Any CPU.Build.0 = Release|Any CPU
-		{74FC988F-0632-4089-8A41-110868777BD0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{74FC988F-0632-4089-8A41-110868777BD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{74FC988F-0632-4089-8A41-110868777BD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{74FC988F-0632-4089-8A41-110868777BD0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3D1FA84-A916-440D-81DF-72E911EB4B69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3D1FA84-A916-440D-81DF-72E911EB4B69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3D1FA84-A916-440D-81DF-72E911EB4B69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3D1FA84-A916-440D-81DF-72E911EB4B69}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
