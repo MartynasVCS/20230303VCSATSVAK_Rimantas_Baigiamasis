@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SeleniumTests.DJIStore
 {
-    internal class TS001_SearchAndAddProductToCartTests
+    internal class TS001_SearchAndAddProductToCartTests : BaseTests
     {
         [Test]
         public void TC001_SearchForDJIMini3()

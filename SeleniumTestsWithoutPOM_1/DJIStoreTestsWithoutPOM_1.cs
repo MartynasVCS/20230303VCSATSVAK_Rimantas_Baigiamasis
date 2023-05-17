@@ -2,6 +2,7 @@
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Support.UI;
+using SeleniumExtras.WaitHelpers;
 using System;
 
 namespace SeleniumTestsWithoutPOM
@@ -24,22 +25,23 @@ namespace SeleniumTestsWithoutPOM
         [Test]
         public void TS001_SearchAndAddProductToCart()
         {
+            driver.Navigate().GoToUrl("https://store.dji.com/lt");
+
             // TC001.01: Click the Search icon
-            IWebElement searchIcon = driver.FindElement(By.XPath("//*[@id='nav']/div[1]/div[2]/nav/div/div[3]/div[1]/button[1]"));
+            IWebElement searchIcon = wait.Until(ExpectedConditions.ElementToBeClickable(By.XPath("//*[@id='nav']/div[3]/div[1]/div[2]/div[2]/button[1]")));
             searchIcon.Click();
 
-            // TC001.02: Select "DJI Mini 3" from drop-down menu
-            IWebElement searchInput = driver.FindElement(By.XPath("//*[@id='nav']/div[1]/div[2]/nav/div/div[3]/div[2]/div/div/input"));
+            // TC001.02: Send the Keys "DJI Mini 3" on the search window
+            IWebElement searchInput = wait.Until(ExpectedConditions.ElementIsVisible(By.XPath("//input[contains(@class, 'header-search-input')]")));
             searchInput.Clear();
-            searchInput.Click();
+            searchInput.SendKeys("DJI Mini 3");
 
-            IWebElement selectDJI3Mini = wait.Until(driver =>
-                driver.FindElement(By.XPath("//ul[@role='listbox']//span[contains(text(), 'DJI Mini 3')]")));
-            selectDJI3Mini.Click();
+            // TC001.03: Look for Item "DJI Mini 3" and click the first item link
+            IWebElement mini3Link = wait.Until(ExpectedConditions.ElementToBeClickable(By.XPath("//ul[@role='listbox']//span[contains(text(), 'DJI Mini 3')]")));
+            mini3Link.Click();
 
-            // TC001.03: Verify that the relevant and containing "DJI Mini 3" product page was opened
-            IWebElement productTitle = wait.Until(driver =>
-                driver.FindElement(By.XPath("//*[@id='anchorVersion']/h1")));
+            // TC001.04: Verify that the relevant and containing "DJI Mini 3" product page was opened
+            IWebElement productTitle = wait.Until(ExpectedConditions.ElementIsVisible(By.XPath("//h1[contains(@id, 'anchorVersion')]")));
             string actualProductTitle = productTitle.Text;
 
             Assert.IsTrue(actualProductTitle.Contains("DJI Mini 3"), "Product page does not contain the searched product: DJI Mini 3");

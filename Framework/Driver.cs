@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using OpenQA.Selenium.Edge;
 
 namespace SeleniumFramework
 {
@@ -21,9 +22,14 @@ namespace SeleniumFramework
         {
             return driver;
         }
+        public static void MaximizePage()
+        {
+            driver.Manage().Window.Maximize();
+        }
 
         internal static void OpenPage(string url)
         {
+            MaximizePage();
             driver.Url = url;
         }
 

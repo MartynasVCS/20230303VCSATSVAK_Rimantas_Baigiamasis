@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SeleniumTests.DJIStore
 {
-    internal class TS003_NavigateToTheRefurbishedProductsCategoryTest
+    internal class TS003_NavigateToTheRefurbishedProductsCategoryTest : BaseTests
     {
         [Test]
         public void TC005_NavigateToTheRefurbishedProductsCategory()
