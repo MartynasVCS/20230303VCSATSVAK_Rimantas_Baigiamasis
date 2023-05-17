@@ -24,8 +24,8 @@ namespace SeleniumTests.DJIStore
 
             StoreDJIFrontPage.ClickYourCountryRegionSelectionButton();
 
-            StoreDJIFrontPage.ScrollUntilElementIsClickableInPopUp();
-            StoreDJIFrontPage.ClickSelectYourRegionLatviaSelectionButton();
+            StoreDJIFrontPage.ScrollUntilElementIsClickableInPopUp(); 
+            StoreDJIFrontPage.ClickSelectYourRegionLatviaSelectionButton(); //Uzstrigau cia nes POP UP lange nesimato elemento. 
             string actualResult = StoreDJIFrontPage.SelectedCountryRegionLatvia();
 
             StringAssert.Contains(expectedResult, actualResult);
