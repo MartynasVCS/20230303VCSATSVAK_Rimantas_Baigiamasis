@@ -1,6 +1,6 @@
 # Final-Task-DJI-store-automatic-tests
 
-Final task for Automatinis Testavimas course of Code Academy, where several automatic tests of DJI Store were performed.
+The final task for the Automatinis Testavimas course of Code Academy, where several automatic tests of DJI Store were performed.
 
 ***Preconditions:***
 1. User has opened the [DJI store](https://store.dji.com/lt).
@@ -10,27 +10,27 @@ Final task for Automatinis Testavimas course of Code Academy, where several auto
 
 ## Test Scenarios (TS), Test Cases (TC)
 
-### TS001: Search and add product to cart
+### TS001: Search and add the product to the cart
 
 - **TC001:** Search for "DJI Mini 3"
   - **TC001.01:** Click the Search icon
-  - **TC001.02:** Select "DJI Mini 3" from drop-down menu
+  - **TC001.02:** Select "DJI Mini 3" from the drop-down menu
   - **TC001.03:** Verify that the relevant and containing "DJI Mini 3" product page was opened
 
-- **TC002:** Add "DJI Mini 3" to cart
+- **TC002:** Add "DJI Mini 3" to the cart
   - **TC002.01:** On the product page [DJI store](https://store.dji.com/lt), click "DJI Mini 3Fly More Combo (DJI RC-N1) 658 €" option
-  - **TC002.02:** Verify that the product added to the shopping bar and total price is 658 €
+  - **TC002.02:** Verify that the product added to the shopping cart and the total price is 658 €
   - **TC002.03:** Click the button "Shop Now"
   - **TC002.04:** Click "Continue Without Coverage"
   - **TC002.05:** Verify that the message "1 Item(s) Added to Cart Successfully! DJI Mini 3 Fly More Combo (DJI RC-N1) ×1" is displayed
   - **TC002.06:** Click View Cart Checkout
 
-### TS002: Update and remove item from cart
+### TS002: Update and remove the item from the cart
 
 - **TC003:** Update "DJI Mini 3" quantity in the product cart
   - **TC003.01:** Click on the "Cart" button in the top right corner of the page. Two items in the shopping cart are listed for the total sum of 1316 €
   - **TC003.02:** Click on the "+" button next to quantity 2 of the "DJI Mini 3"
-  - **TC003.03:** Verify that two items are in the the shopping cart
+  - **TC003.03:** Verify that two items are in the shopping cart
 
 - **TC004:** Remove "DJI Mini 3" products from the cart
   - **TC004.01:** Click on the "Cart" button in the top right corner of the page. [Product cart page](https://store.dji.com/lv/cart?from=store-nav) will open. The products removed from the shopping cart
