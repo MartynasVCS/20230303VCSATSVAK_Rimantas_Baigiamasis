@@ -35,10 +35,25 @@ namespace SeleniumFramework.Pages.DJI_store
             return Common.WaitForElementToBeEnabled(Locators.StoreDJIFrontPage.countryRegionSelectionButton);
         }
 
-        public static void ScrollUntilElementIsClickableInPopUp()
+        public static bool WaitForAcceptAllButtonBeVisible()
         {
-            Common.ScrollUntilElementIsClickableInPopUp(Locators.StoreDJIFrontPage.regionLatviaSelectionButton);
+            return Common.WaitForElementToBeVisible(Locators.StoreDJIFrontPage.cookyAcceptAllButton);
         }
+
+        public static void ClickAcceptAllButton()
+        {
+            Common.Click(Locators.StoreDJIFrontPage.cookyAcceptAllButton);
+        }
+
+        public static bool WaitForAcceptAllButtonBeEnabled()
+        {
+            return Common.WaitForElementToBeEnabled(Locators.StoreDJIFrontPage.cookyAcceptAllButton);
+        }
+
+        //public static void ScrollUntilElementIsClickableInPopUp()
+        //{
+        //    Common.ScrollUntilElementIsClickableInPopUp(Locators.StoreDJIFrontPage.regionLatviaSelectionButton);
+        //}
 
         //public static void EnterMessage(string message)
         //{

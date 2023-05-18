@@ -15,22 +15,17 @@ namespace SeleniumTests.DJIStore
         [Test]
         public void TC005_ChangeTheRegionLanguageCurrency()
         {
-            string expectedResult = "Latvia English € EUR";
+            string expectedResult = "Latvia (English / € EUR)";
             
-            Driver.InitializeDriver();
             StoreDJIFrontPage.Open();
-
+            StoreDJIFrontPage.WaitForAcceptAllButtonBeEnabled();
+            StoreDJIFrontPage.ClickAcceptAllButton();
             StoreDJIFrontPage.WaitForRegionSelectionButtonBeEnabled();
-
             StoreDJIFrontPage.ClickYourCountryRegionSelectionButton();
-
-            StoreDJIFrontPage.ScrollUntilElementIsClickableInPopUp(); 
-            StoreDJIFrontPage.ClickSelectYourRegionLatviaSelectionButton(); //Uzstrigau cia nes POP UP lange nesimato elemento. 
+            StoreDJIFrontPage.ClickSelectYourRegionLatviaSelectionButton(); 
             string actualResult = StoreDJIFrontPage.SelectedCountryRegionLatvia();
 
             StringAssert.Contains(expectedResult, actualResult);
-
-            Driver.ShutdownDriver();
         }
 
     }

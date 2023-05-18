@@ -139,7 +139,7 @@ namespace SeleniumFramework.Pages
 
         internal static bool WaitForElementToBeEnabled(string locator)
         {
-            WebDriverWait wait = new WebDriverWait(Driver.GetDriver(), TimeSpan.FromSeconds(20));
+            WebDriverWait wait = new WebDriverWait(Driver.GetDriver(), TimeSpan.FromSeconds(30));
             return wait.Until(driver => driver.FindElement(By.XPath(locator)).Enabled);
         }
 
