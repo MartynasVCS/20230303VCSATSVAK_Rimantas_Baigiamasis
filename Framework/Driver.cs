@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using OpenQA.Selenium.Edge;
+using System.IO;
 
 namespace SeleniumFramework
 {
@@ -37,5 +38,17 @@ namespace SeleniumFramework
         {
             driver.Quit();
         }
+        //public static string TakeScreenshot(string methodName)
+        //{
+        //    string screenshotDirectoryPath = $"{AppDomain.CurrentDomain.BaseDirectory}Screenshots";
+        //    string screenshotName = $"{methodName}-{DateTime.Now.ToString("yyyy-MM-dd-HH-mm-ss")}-screenshot.png";
+        //    string screenshotFilePath = $"{screenshotDirectoryPath}\\{screenshotName}";
+
+        //    Directory.CreateDirectory(screenshotDirectoryPath);
+        //    Screenshot screenshot = ((ITakesScreenshot)driver.Value).GetScreenshot();
+        //    screenshot.SaveAsFile($"{screenshotFilePath}", ScreenshotImageFormat.Png);
+
+        //    return screenshotFilePath;
+        //}
     }
 }

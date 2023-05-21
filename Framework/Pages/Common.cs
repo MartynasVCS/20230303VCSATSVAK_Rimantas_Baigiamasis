@@ -145,7 +145,7 @@ namespace SeleniumFramework.Pages
 
         internal static bool WaitForElementToBeVisible(string locator)
         {
-            WebDriverWait wait = new WebDriverWait(Driver.GetDriver(), TimeSpan.FromSeconds(10));
+            WebDriverWait wait = new WebDriverWait(Driver.GetDriver(), TimeSpan.FromSeconds(30));
             return wait.Until(ExpectedConditions.ElementIsVisible(By.XPath(locator))).Displayed;
 
             // Alternatyva be ExpectedConditions

@@ -50,6 +50,41 @@ namespace SeleniumFramework.Pages.DJI_store
             return Common.WaitForElementToBeEnabled(Locators.StoreDJIFrontPage.cookyAcceptAllButton);
         }
 
+        public static void ClickSearchButton()
+        {
+            Common.Click(Locators.StoreDJIFrontPage.searchButton);
+        }
+
+        public static void EnterProductNameInSearchBox(string message)
+        {
+            Common.SendKeys(Locators.StoreDJIFrontPage.searchBar,message);
+        }
+
+        public static void ClickSearchIconInSearchBar()
+        {
+            Common.Click(Locators.StoreDJIFrontPage.searhIcon);
+        }
+
+        public static void ClickFirstDJIMini3Product()
+        {
+            Common.Click(Locators.StoreDJIFrontPage.firstDJIMini3ProductLink); 
+        }
+
+        public static string GetProductText()
+        {
+            return Common.GetElementText(Locators.StoreDJIFrontPage.productText);
+        }
+
+        public static bool WaitForDJIMini3BeVisible()
+        {
+            return Common.WaitForElementToBeVisible(Locators.StoreDJIFrontPage.firstDJIMini3ProductLink);
+        }
+
+        public static bool WaitForDJIMini3InProductPageBeVisible()
+        {
+            return Common.WaitForElementToBeVisible(Locators.StoreDJIFrontPage.productText);
+        }
+
         //public static void ScrollUntilElementIsClickableInPopUp()
         //{
         //    Common.ScrollUntilElementIsClickableInPopUp(Locators.StoreDJIFrontPage.regionLatviaSelectionButton);
