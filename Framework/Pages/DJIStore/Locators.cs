@@ -18,7 +18,7 @@ namespace SeleniumFramework.Pages.DJIStore
             internal static string shopNowButton = "//*[@id='gtm_ShopNow']";
             internal static string continueWithoutCoverageButton = "//button[contains(span, 'Continue Without Coverage')]";
             internal static string viewCartAndCheckoutButton = "//button[contains(span,'View Cart & Checkout')]";
-            internal static string itemInShoppingCart = "//*[@id='main']/article/div/section[2]/section[1]/div/div/section/div[1]/div/div[1]/div[1]/a";
+            internal static string itemInShoppingCart = "//*[@id='app']/div/article/div/section[3]/div/div[2]/div[1]/div[2]/div[2]/div/div[1]/div/a";
         }
 
     }
