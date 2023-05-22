@@ -14,6 +14,11 @@ namespace SeleniumFramework.Pages.DJIStore
             internal static string searhIcon = "//*[@aria-label='Submit Search']";
             internal static string firstDJIMini3ProductLink = "//*[@id='store-main-content']/div[2]/div/div/div/section/div[3]/ul/li[1]/a"; //"//*[@id='root']/div/ul/li[1]/a";
             internal static string productText = "/html/body/main/div/section/div/div/section[1]/header/h3"; //"//*[@id='anchorVersion']/h3";
+            internal static string dJIMini3FlyMoreComboOption = "/html/body/main/section/main/div[2]/div/div[2]/article/article/section[1]/div/article/div[2]/div/section[3]/div/section/ul/li[2]/label/div/div/div/div/div[1]/header/div";//"//*[@id='anchorSelectoption']/div/div/div/label[2]/div/div";
+            internal static string shopNowButton = "//*[@id='gtm_ShopNow']";
+            internal static string continueWithoutCoverageButton = "//button[contains(span, 'Continue Without Coverage')]";
+            internal static string viewCartAndCheckoutButton = "//button[contains(span,'View Cart & Checkout')]";
+            internal static string itemInShoppingCart = "//*[@id='main']/article/div/section[2]/section[1]/div/div/section/div[1]/div/div[1]/div[1]/a";
         }
 
     }

@@ -72,7 +72,7 @@ namespace SeleniumFramework.Pages.DJI_store
 
         public static string GetProductText()
         {
-            return Common.GetElementText(Locators.StoreDJIFrontPage.productText);
+            return Common.GetElementText(Locators.StoreDJIFrontPage.itemInShoppingCart);
         }
 
         public static bool WaitForDJIMini3BeVisible()
@@ -83,6 +83,46 @@ namespace SeleniumFramework.Pages.DJI_store
         public static bool WaitForDJIMini3InProductPageBeVisible()
         {
             return Common.WaitForElementToBeVisible(Locators.StoreDJIFrontPage.productText);
+        }
+
+        public static void ScrollTillDJIMini3FlyMoreComboOptionIsVisible()
+        {
+            Common.ScrollUntilElementIsClickable(Locators.StoreDJIFrontPage.dJIMini3FlyMoreComboOption);
+        }
+
+        public static void ClickDJIMini3FlyMoreComboOption()
+        {
+            Common.Click(Locators.StoreDJIFrontPage.dJIMini3FlyMoreComboOption);
+        }
+
+        public static void ClickShopNowButton()
+        {
+            Common.Click(Locators.StoreDJIFrontPage.shopNowButton);
+        }
+
+        public static void ClickContinueWithoutCoverageButton()
+        {
+            Common.Click(Locators.StoreDJIFrontPage.continueWithoutCoverageButton);
+        }
+
+        public static void WaitTillWithoutCoverageButtonBeEnabled()
+        {
+            Common.WaitForElementToBeEnabled(Locators.StoreDJIFrontPage.continueWithoutCoverageButton);
+        }
+
+        public static void ClickViewCartAndCheckoutButton()
+        {
+            Common.Click(Locators.StoreDJIFrontPage.viewCartAndCheckoutButton);
+        }
+
+        public static void WaitTillViewCartAndCheckouButtonBeEnabled()
+        {
+            Common.WaitForElementToBeEnabled(Locators.StoreDJIFrontPage.viewCartAndCheckoutButton);
+        }
+
+        public static void WaitTillItemInCartBeViewable()
+        {
+            Common.WaitForElementToBeEnabled(Locators.StoreDJIFrontPage.itemInShoppingCart);
         }
 
         //public static void ScrollUntilElementIsClickableInPopUp()
