@@ -39,7 +39,7 @@ The final task for the Automatinis Testavimas course of Code Academy, where seve
 - **TC004:** Navigate to the "Official Refurbished" products and select category "Handheld"
   - **TC004.01:** Click the "Official Refurbished"" button in the top navigation menu
   - **TC004.02:** Select category "Handheld"
-  - **TC004.03:** Verify that the "Handheld" category is displayed
+  - **TC004.03:** Verify that the "Handheld" text in "Handheld" category page area is displayed
 
 ### TS004: Change the region, language, currency
 
