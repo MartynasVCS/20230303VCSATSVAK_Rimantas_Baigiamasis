@@ -19,7 +19,7 @@ The final task for the Automatinis Testavimas course of Code Academy, where seve
   - **TC001.04:** Click "DJI Mini 3Fly More Combo (DJI RC-N1) 658 €" option
   - **TC001.05:** Click the button "Shop Now"
   - **TC001.06:** Click "Continue Without Coverage"
-  - **TC001.07:** Click View Cart CheckoutVerify that the message "1 Item(s) Added to Cart Successfully! DJI Mini 3 Fly More Combo (DJI RC-N1) ×1" is displayed
+  - **TC001.07:** Click View Cart Checkout
   - **TC001.08:** Verify that product in the cart is "DJI Mini 3 Fly More Combo (DJI RC-N1)"
 
 ### TS002: Update and remove the item from the cart
