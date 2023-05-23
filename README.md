@@ -36,10 +36,10 @@ The final task for the Automatinis Testavimas course of Code Academy, where seve
 
 ### TS003: Navigate to the "Refurbished Products" category
 
-- **TC004:** Navigate to the "Refurbished Products" category
-  - **TC004.01:** Hover over the "Refurbished Products" button in the top navigation menu
-  - **TC004.02:** The page ["Refurbished"](https://store.dji.com/lt/pages/refurbished?from=store-nav) opens, "Camera Drones" category is active
-  - **TC004.03:** Verify that the page displays relevant drone products
+- **TC004:** Navigate to the "Official Refurbished" products and select category "Handheld"
+  - **TC004.01:** Click the "Official Refurbished"" button in the top navigation menu
+  - **TC004.02:** Select category "Handheld"
+  - **TC004.03:** Verify that the "Handheld" category is displayed
 
 ### TS004: Change the region, language, currency
 
