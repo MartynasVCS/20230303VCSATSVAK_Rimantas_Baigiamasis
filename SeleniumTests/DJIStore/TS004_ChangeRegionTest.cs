@@ -13,7 +13,7 @@ namespace SeleniumTests.DJIStore
     internal class TS004_ChangeRegionTest : BaseTests
     {
         [Test]
-        public void TC006_ChangeTheRegionLanguageCurrency()
+        public void TC005_ChangeTheRegionLanguageCurrency()
         {
             string expectedResult = "Latvia (English / € EUR)";
             
