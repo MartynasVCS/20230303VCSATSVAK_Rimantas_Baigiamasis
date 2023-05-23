@@ -125,6 +125,21 @@ namespace SeleniumFramework.Pages.DJI_store
             Common.WaitForElementToBeEnabled(Locators.StoreDJIFrontPage.itemInShoppingCart);
         }
 
+        public static void ClickOfficialRefurbished()
+        {
+            Common.Click(Locators.StoreDJIFrontPage.officialRefurbished);
+        }
+
+        public static void ClickHandheldProductCategory()
+        {
+            Common.Click(Locators.StoreDJIFrontPage.handheldProductCategory);
+        }
+
+        public static string GetHandheldProductsAreaText()
+        {
+            return Common.GetElementText(Locators.StoreDJIFrontPage.handheldProductsAreaText);
+        }
+
         //public static void ScrollUntilElementIsClickableInPopUp()
         //{
         //    Common.ScrollUntilElementIsClickableInPopUp(Locators.StoreDJIFrontPage.regionLatviaSelectionButton);

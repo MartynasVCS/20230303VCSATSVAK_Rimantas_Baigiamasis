@@ -19,6 +19,10 @@ namespace SeleniumFramework.Pages.DJIStore
             internal static string continueWithoutCoverageButton = "//button[contains(span, 'Continue Without Coverage')]";
             internal static string viewCartAndCheckoutButton = "//button[contains(span,'View Cart & Checkout')]";
             internal static string itemInShoppingCart = "//*[@id='app']/div/article/div/section[3]/div/div[2]/div[1]/div[2]/div[2]/div/div[1]/div/a";
+            
+            internal static string officialRefurbished = "//li[contains(@class, 'index-module__dji-nav-item') and contains(@href, '/pages/refurbished')]";//"//*[@id='nav']/div[1]/div[2]/nav/div/div[1]/ul/li[6]";
+            internal static string handheldProductCategory = "//*[@id='section-refurbished-tab']/div/div[2]/div/div/ul/li[2]/button";
+            internal static string handheldProductsAreaText = "//h2[text()='Handheld']";
         }
 
     }
