@@ -23,6 +23,16 @@ namespace SeleniumFramework.Pages.DJIStore
             internal static string officialRefurbished = "//li[contains(@class, 'index-module__dji-nav-item') and contains(@href, '/pages/refurbished')]";//"//*[@id='nav']/div[1]/div[2]/nav/div/div[1]/ul/li[6]";
             internal static string handheldProductCategory = "//*[@id='section-refurbished-tab']/div/div[2]/div/div/ul/li[2]/button";
             internal static string handheldProductsAreaText = "//h2[text()='Handheld']";
+
+            //AccountDJILoginPage
+
+            internal static string emailInputField = "//div[@class='dji-input-wrapper']//input[@name='username']";
+            internal static string logInButton = "//button[contains(span, 'Log in')]";
+            internal static string passwordCanNotBeEmptyMessage = "//div[contains(@class, 'dji-error-msg')]/span[normalize-space()='Password cannot be empty']";
+
+            internal static string passwordInputField = "//input[@aria-label='Password' and @type='password']";
+            internal static string incorrectEmailOrPasswordMessage = "//div[contains(@class, 'dji-error-msg')]/span[normalize-space()='Password cannot be empty']";
+            
         }
 
     }

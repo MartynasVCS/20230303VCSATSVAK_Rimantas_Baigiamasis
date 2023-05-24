@@ -50,7 +50,7 @@
   <ItemGroup>
     <Compile Include="DJIStore\BaseTests.cs" />
     <Compile Include="DJIStore\TS001_SearchAndAddProductToCartTests.cs" />
-    <Compile Include="DJIStore\TS002_UpdateAndRemoveItemFromCartTests.cs" />
+    <Compile Include="DJIStore\TS002_TS002_LoginTests.cs" />
     <Compile Include="DJIStore\TS003_NavigateToRefurbishedProductsCategoryTest.cs" />
     <Compile Include="DJIStore\TS004_ChangeRegionTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -55,6 +55,7 @@
   <ItemGroup>
     <Compile Include="Driver.cs" />
     <Compile Include="Pages\Common.cs" />
+    <Compile Include="Pages\DJIStore\AccountDJILoginPage.cs" />
     <Compile Include="Pages\DJIStore\Locators.cs" />
     <Compile Include="Pages\DJIStore\StoreDJIFrontPage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
