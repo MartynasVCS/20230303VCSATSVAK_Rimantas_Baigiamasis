@@ -9,6 +9,7 @@ using OpenQA.Selenium.Edge;
 using System.IO;
 using OpenQA.Selenium.Support.UI;
 
+
 namespace SeleniumFramework
 {
     public class Driver
@@ -18,8 +19,13 @@ namespace SeleniumFramework
         public static void InitializeDriver()
         {
             ChromeOptions options = new ChromeOptions();
-            options.AddArgument("--user-data-dir=C:\\Users\\Rimas\\AppData\\Local\\Temp\\scoped_dir29120_2073148784");
-            options.AddArgument("--user-profile-directory=Profile 1");
+            driver = new ChromeDriver(options);
+        }
+        public static void InitializeDriver(string userDataDir, string profileDir)
+        {
+            ChromeOptions options = new ChromeOptions();
+            options.AddArgument($"--user-data-dir={userDataDir}");
+            options.AddArgument($"--user-profile-directory={profileDir}");
             driver = new ChromeDriver(options);
         }
 
