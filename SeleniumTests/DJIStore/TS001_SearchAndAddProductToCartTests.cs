@@ -22,8 +22,8 @@ namespace SeleniumTests.DJIStore
             StoreDJIFrontPage.ClickSearchIconInSearchBar();
             StoreDJIFrontPage.WaitForDJIMini3BeVisible();
             StoreDJIFrontPage.ClickFirstDJIMini3Product();
-            StoreDJIFrontPage.WaitForAcceptAllButtonBeEnabled();
-            StoreDJIFrontPage.ClickAcceptAllButton();
+            //StoreDJIFrontPage.WaitForAcceptAllButtonBeEnabled();
+            //StoreDJIFrontPage.ClickAcceptAllButton();
             StoreDJIFrontPage.ScrollTillDJIMini3FlyMoreComboOptionIsVisible();
             StoreDJIFrontPage.ClickDJIMini3FlyMoreComboOption();
             StoreDJIFrontPage.ClickShopNowButton();

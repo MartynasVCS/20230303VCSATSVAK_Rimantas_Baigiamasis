@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using OpenQA.Selenium.Edge;
 using System.IO;
+using OpenQA.Selenium.Support.UI;
 
 namespace SeleniumFramework
 {
@@ -16,7 +17,10 @@ namespace SeleniumFramework
 
         public static void InitializeDriver()
         {
-            driver = new ChromeDriver();
+            ChromeOptions options = new ChromeOptions();
+            options.AddArgument("--user-data-dir=C:\\Users\\Rimas\\AppData\\Local\\Temp\\scoped_dir29120_2073148784");
+            options.AddArgument("--user-profile-directory=Profile 1");
+            driver = new ChromeDriver(options);
         }
 
         internal static IWebDriver GetDriver()
@@ -38,6 +42,8 @@ namespace SeleniumFramework
         {
             driver.Quit();
         }
+
+   
         //public static string TakeScreenshot(string methodName)
         //{
         //    string screenshotDirectoryPath = $"{AppDomain.CurrentDomain.BaseDirectory}Screenshots";

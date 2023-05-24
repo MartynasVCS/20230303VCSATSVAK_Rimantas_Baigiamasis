@@ -252,5 +252,10 @@ namespace SeleniumFramework.Pages
 
             return texts;
         }
+
+        internal static async Task Wait()
+        {
+            await Task.Delay(2000); ;
+        }
     }
 }

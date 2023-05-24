@@ -35,9 +35,9 @@ namespace Framework.Pages.DJIStore
             Common.SendKeys(Locators.StoreDJIFrontPage.passwordInputField, keys);
         }
 
-        public static string GetYourEmailIsIncorrectText()
+        public static string GetFollowTheProptsToCompleteText()
         {
-            return Common.GetElementText(Locators.StoreDJIFrontPage.incorrectEmailOrPasswordMessage);
+            return Common.GetElementText(Locators.StoreDJIFrontPage.followThePromptsToCompleteMessage);
         }
 
         public static bool WaitForPasswordCannotBeEmptyBeVisible()
@@ -47,7 +47,7 @@ namespace Framework.Pages.DJIStore
 
         public static bool WaitYourEmailIsIncorrectTextBeVisible()
         {
-            return Common.WaitForElementToBeEnabled(Locators.StoreDJIFrontPage.incorrectEmailOrPasswordMessage);
+            return Common.WaitForElementToBeEnabled(Locators.StoreDJIFrontPage.followThePromptsToCompleteMessage);
         }
 
         public static bool WaitForAcceptAllButtonBeEnabled()
@@ -58,6 +58,21 @@ namespace Framework.Pages.DJIStore
         public static void ClickAcceptAllButton()
         {
             Common.Click(Locators.StoreDJIFrontPage.cookyAcceptAllButton);
+        }
+
+        public static void Wait()
+        {
+            Task.Run(async () => await Common.Wait()).Wait(); 
+        }
+
+        public static void ClickRecapcha()
+        {
+            Common.ClickElements(Locators.StoreDJIFrontPage.reCaptcha);
+        }
+
+        public static bool WaitTillRecapchaBeActive()
+        {
+           return Common.WaitForElementToBeEnabled(Locators.StoreDJIFrontPage.reCaptcha);
         }
     }
 }

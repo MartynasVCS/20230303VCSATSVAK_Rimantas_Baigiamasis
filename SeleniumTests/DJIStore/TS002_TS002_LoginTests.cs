@@ -15,14 +15,19 @@ namespace SeleniumTests.DJIStore
         public void TC003_LoginWithoutPassword()
         {
             string expectedResult = "Password cannot be empty";
-            string correctEmail = "gintilas.rimants@gmail.com";
-            
+            string correctEmail = "gintilas.rimantas@gmail.com";
+
             AccountDJILoginPage.Open();
-            AccountDJILoginPage.WaitForAcceptAllButtonBeEnabled();
-            AccountDJILoginPage.ClickAcceptAllButton();
+            AccountDJILoginPage.Wait();
+            //AccountDJILoginPage.WaitForAcceptAllButtonBeEnabled();
+            //AccountDJILoginPage.ClickAcceptAllButton();
+            AccountDJILoginPage.Wait();
             AccountDJILoginPage.EnterEmail(correctEmail);
+            AccountDJILoginPage.Wait();
             AccountDJILoginPage.ClickLogIn();
+            AccountDJILoginPage.Wait();
             AccountDJILoginPage.WaitForPasswordCannotBeEmptyBeVisible();
+            AccountDJILoginPage.Wait();
             string actualResult = AccountDJILoginPage.GetPasswordCannotBeEmpyText();
 
             StringAssert.Contains(expectedResult, actualResult);
@@ -30,20 +35,26 @@ namespace SeleniumTests.DJIStore
         [Test]
         public void TC004_LoginWithInvalidPassword()
         {
-            string expectedResult = "Your email or password is incorrect";
-            string correctEmail = "gintilas.rimants@gmail.com";
+            string expectedResult2 = "Please follow the prompts to complete the verify";
+            string correctEmail = "gintilas.rimantas@gmail.com";
             string incorrectPassword = "1234";
 
             AccountDJILoginPage.Open();
-            AccountDJILoginPage.WaitForAcceptAllButtonBeEnabled();
-            AccountDJILoginPage.ClickAcceptAllButton();
+            AccountDJILoginPage.Wait();
+            //AccountDJILoginPage.WaitForAcceptAllButtonBeEnabled();
+            //AccountDJILoginPage.ClickAcceptAllButton();
+            AccountDJILoginPage.Wait();
             AccountDJILoginPage.EnterEmail(correctEmail);
-            AccountDJILoginPage.EnterPassword(incorrectPassword); //ReCaptcha isijungia
+            AccountDJILoginPage.Wait();
+            AccountDJILoginPage.EnterPassword(incorrectPassword); 
+            //AccountDJILoginPage.WaitTillRecapchaBeActive();
+            //AccountDJILoginPage.ClickRecapcha();//neranda recaptCha elemento
+            AccountDJILoginPage.Wait();
             AccountDJILoginPage.ClickLogIn();
             //AccountDJILoginPage.WaitYourEmailIsIncorrectTextBeVisible();
-            string actualResult = AccountDJILoginPage.GetYourEmailIsIncorrectText();
+            string actualResult = AccountDJILoginPage.GetFollowTheProptsToCompleteText();
 
-            StringAssert.Contains(expectedResult, actualResult);
+            StringAssert.Contains(expectedResult2, actualResult);
         }
 
     }

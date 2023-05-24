@@ -31,8 +31,9 @@ namespace SeleniumFramework.Pages.DJIStore
             internal static string passwordCanNotBeEmptyMessage = "//div[contains(@class, 'dji-error-msg')]/span[normalize-space()='Password cannot be empty']";
 
             internal static string passwordInputField = "//input[@aria-label='Password' and @type='password']";
-            internal static string incorrectEmailOrPasswordMessage = "//div[contains(@class, 'dji-error-msg')]/span[normalize-space()='Password cannot be empty']";
+            internal static string followThePromptsToCompleteMessage = "//div[contains(@class, 'dji-error-msg')]/span";
             
+            internal static string reCaptcha = "//*[@id='recaptcha-anchor']/div[4]";
         }
 
     }

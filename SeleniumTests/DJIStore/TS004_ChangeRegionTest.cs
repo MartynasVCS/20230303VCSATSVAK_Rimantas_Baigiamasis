@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using SeleniumFramework;
 using SeleniumFramework.Pages.DJI_store;
+using Framework.Pages.DJIStore;
 
 namespace SeleniumTests.DJIStore
 
@@ -18,8 +19,9 @@ namespace SeleniumTests.DJIStore
             string expectedResult = "Latvia (English / € EUR)";
             
             StoreDJIFrontPage.Open();
-            StoreDJIFrontPage.WaitForAcceptAllButtonBeEnabled();
-            StoreDJIFrontPage.ClickAcceptAllButton();
+            System.Threading.Thread.Sleep(2000);
+            //StoreDJIFrontPage.WaitForAcceptAllButtonBeEnabled();
+            //StoreDJIFrontPage.ClickAcceptAllButton();
             StoreDJIFrontPage.WaitForRegionSelectionButtonBeEnabled();
             StoreDJIFrontPage.ClickYourCountryRegionSelectionButton();
             StoreDJIFrontPage.ClickSelectYourRegionLatviaSelectionButton(); 

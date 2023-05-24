@@ -16,9 +16,10 @@ namespace SeleniumTests.DJIStore
             string expectedResult = "Handheld";
             
             StoreDJIFrontPage.Open();
+            System.Threading.Thread.Sleep(2000);
             StoreDJIFrontPage.ClickOfficialRefurbished();
-            StoreDJIFrontPage.WaitForAcceptAllButtonBeEnabled();
-            StoreDJIFrontPage.ClickAcceptAllButton();
+            //StoreDJIFrontPage.WaitForAcceptAllButtonBeEnabled();
+            //StoreDJIFrontPage.ClickAcceptAllButton();
             StoreDJIFrontPage.ClickHandheldProductCategory();
             string actualResult = StoreDJIFrontPage.GetHandheldProductsAreaText();
 
