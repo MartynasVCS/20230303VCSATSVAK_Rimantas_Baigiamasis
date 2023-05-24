@@ -3,7 +3,7 @@
 The final task for the Automatinis Testavimas course of Code Academy, where several automatic tests of DJI Store were performed.
 
 ***Preconditions:***
-1. User has Chrome profile
+1. User has Chrome profile for testing mode
 2. Region settings: Lithuania (English / € EUR)..
 
 ## Test Scenarios (TS), Test Cases (TC)
