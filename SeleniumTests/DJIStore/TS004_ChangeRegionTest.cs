@@ -24,7 +24,8 @@ namespace SeleniumTests.DJIStore
             StoreDJIFrontPage.ClickAcceptAllButton();
             StoreDJIFrontPage.WaitForRegionSelectionButtonBeEnabled();
             StoreDJIFrontPage.ClickYourCountryRegionSelectionButton();
-            StoreDJIFrontPage.ClickSelectYourRegionLatviaSelectionButton(); 
+            StoreDJIFrontPage.ClickSelectYourRegionLatviaSelectionButton();
+            System.Threading.Thread.Sleep(1000);
             string actualResult = StoreDJIFrontPage.SelectedCountryRegionLatvia();
 
             StringAssert.Contains(expectedResult, actualResult);

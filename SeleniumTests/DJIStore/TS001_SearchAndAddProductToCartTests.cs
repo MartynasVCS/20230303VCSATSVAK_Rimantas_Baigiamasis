@@ -21,6 +21,7 @@ namespace SeleniumTests.DJIStore
             StoreDJIFrontPage.EnterProductNameInSearchBox(inputTextInToSearchBar);
             StoreDJIFrontPage.ClickSearchIconInSearchBar();
             StoreDJIFrontPage.WaitForDJIMini3BeVisible();
+            System.Threading.Thread.Sleep(1000);
             StoreDJIFrontPage.ClickFirstDJIMini3Product();
             StoreDJIFrontPage.WaitForAcceptAllButtonBeEnabled();
             StoreDJIFrontPage.ClickAcceptAllButton();
