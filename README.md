@@ -3,10 +3,8 @@
 The final task for the Automatinis Testavimas course of Code Academy, where several automatic tests of DJI Store were performed.
 
 ***Preconditions:***
-1. User has opened the [DJI store](https://store.dji.com/lt).
-2. User has a valid account for the DJI store.
-3. User is logged in to the DJI store.
-4. Region settings: Lithuania (English / € EUR).
+1. User has Chrome profile
+2. Region settings: Lithuania (English / € EUR)..
 
 ## Test Scenarios (TS), Test Cases (TC)
 
