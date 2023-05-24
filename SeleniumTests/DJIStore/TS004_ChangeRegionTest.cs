@@ -20,8 +20,8 @@ namespace SeleniumTests.DJIStore
             
             StoreDJIFrontPage.Open();
             System.Threading.Thread.Sleep(2000);
-            //StoreDJIFrontPage.WaitForAcceptAllButtonBeEnabled();
-            //StoreDJIFrontPage.ClickAcceptAllButton();
+            StoreDJIFrontPage.WaitForAcceptAllButtonBeEnabled();
+            StoreDJIFrontPage.ClickAcceptAllButton();
             StoreDJIFrontPage.WaitForRegionSelectionButtonBeEnabled();
             StoreDJIFrontPage.ClickYourCountryRegionSelectionButton();
             StoreDJIFrontPage.ClickSelectYourRegionLatviaSelectionButton(); 
