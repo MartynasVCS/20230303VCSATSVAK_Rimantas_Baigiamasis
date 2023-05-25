@@ -1,10 +1,4 @@
-﻿using OpenQA.Selenium;
-using SeleniumFramework.Pages.DJIStore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using SeleniumFramework.Pages.DJIStore;
 
 namespace SeleniumFramework.Pages.DJI_store
 {
@@ -33,11 +27,6 @@ namespace SeleniumFramework.Pages.DJI_store
         public static bool WaitForRegionSelectionButtonBeEnabled()
         {
             return Common.WaitForElementToBeEnabled(Locators.StoreDJIFrontPage.countryRegionSelectionButton);
-        }
-
-        public static bool WaitForAcceptAllButtonBeVisible()
-        {
-            return Common.WaitForElementToBeVisible(Locators.StoreDJIFrontPage.cookyAcceptAllButton);
         }
 
         public static void ClickAcceptAllButton()
@@ -78,11 +67,6 @@ namespace SeleniumFramework.Pages.DJI_store
         public static bool WaitForDJIMini3BeVisible()
         {
             return Common.WaitForElementToBeVisible(Locators.StoreDJIFrontPage.firstDJIMini3ProductLink);
-        }
-
-        public static bool WaitForDJIMini3InProductPageBeVisible()
-        {
-            return Common.WaitForElementToBeVisible(Locators.StoreDJIFrontPage.productText);
         }
 
         public static void ScrollTillDJIMini3FlyMoreComboOptionIsVisible()
@@ -139,37 +123,5 @@ namespace SeleniumFramework.Pages.DJI_store
         {
             return Common.GetElementText(Locators.StoreDJIFrontPage.handheldProductsAreaText);
         }
-
-        //public static void ScrollUntilElementIsClickableInPopUp()
-        //{
-        //    Common.ScrollUntilElementIsClickableInPopUp(Locators.StoreDJIFrontPage.regionLatviaSelectionButton);
-        //}
-
-        //public static void EnterMessage(string message)
-        //{
-        //    string locator = "";
-        //    Common.SendKeys(locator, message);
-        //}
-
-        //public static void SelectColorInOldStyleMenu(string expectedColor)
-        //{
-        //    Common.SelectOptionByText(Locators.SelectMenu.selectOldStyleMenu, expectedColor);
-        //}
-
-        //public static string GetSelectedColorInOldStyleMenu()
-        //{
-        //    return Common.GetSelectedOption(Locators.SelectMenu.selectOldStyleMenu);
-        //}
-
-        //public static void SelectTitleInSelectOneMenu(string expectedTitle)
-        //{
-        //    Common.Click(Locators.SelectMenu.selectSelectOneMenu);
-        //    Common.Click($"//*[contains(@id, 'react-select') and contains(text(),'{expectedTitle}')]");
-        //}
-
-        //public static string GetSelectedTitleInSelectOneMenu()
-        //{
-        //    return Common.GetElementText(Locators.SelectMenu.selectSelectOneMenu);
-        //}
     }
 }

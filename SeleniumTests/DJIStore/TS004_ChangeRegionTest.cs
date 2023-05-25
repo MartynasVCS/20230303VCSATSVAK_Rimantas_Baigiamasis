@@ -1,15 +1,7 @@
 ﻿using NUnit.Framework;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using SeleniumFramework;
 using SeleniumFramework.Pages.DJI_store;
-using Framework.Pages.DJIStore;
 
 namespace SeleniumTests.DJIStore
-
 {
     internal class TS004_ChangeRegionTest : BaseTests
     {
@@ -30,6 +22,5 @@ namespace SeleniumTests.DJIStore
 
             StringAssert.Contains(expectedResult, actualResult);
         }
-
     }
 }

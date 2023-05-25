@@ -1,10 +1,6 @@
 ﻿using SeleniumFramework;
 using SeleniumFramework.Pages;
 using SeleniumFramework.Pages.DJIStore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace Framework.Pages.DJIStore
@@ -45,34 +41,9 @@ namespace Framework.Pages.DJIStore
             return Common.WaitForElementToBeEnabled(Locators.StoreDJIFrontPage.passwordCanNotBeEmptyMessage);
         }
 
-        public static bool WaitYourEmailIsIncorrectTextBeVisible()
-        {
-            return Common.WaitForElementToBeEnabled(Locators.StoreDJIFrontPage.followThePromptsToCompleteMessage);
-        }
-
-        public static bool WaitForAcceptAllButtonBeEnabled()
-        {
-            return Common.WaitForElementToBeVisible(Locators.StoreDJIFrontPage.cookyAcceptAllButton);
-        }
-
-        public static void ClickAcceptAllButton()
-        {
-            Common.Click(Locators.StoreDJIFrontPage.cookyAcceptAllButton);
-        }
-
         public static void Wait()
         {
             Task.Run(async () => await Common.Wait()).Wait(); 
-        }
-
-        public static void ClickRecapcha()
-        {
-            Common.ClickElements(Locators.StoreDJIFrontPage.reCaptcha);
-        }
-
-        public static bool WaitTillRecapchaBeActive()
-        {
-           return Common.WaitForElementToBeEnabled(Locators.StoreDJIFrontPage.reCaptcha);
         }
     }
 }

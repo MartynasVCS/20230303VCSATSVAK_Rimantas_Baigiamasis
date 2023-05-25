@@ -1,26 +1,17 @@
 ﻿using Framework.Pages.DJIStore;
 using NUnit.Framework;
-using SeleniumFramework.Pages.DJI_store;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SeleniumTests.DJIStore
 {
     internal class TS002_LoginTests : BaseTestsWithChromeProfile
     {
         [Test]
-        public void TC003_LoginWithoutPassword()
+        public void TC002_LoginWithoutPassword()
         {
             string expectedResult = "Password cannot be empty";
             string correctEmail = "abc@gmail.com";
 
             AccountDJILoginPage.Open();
-            AccountDJILoginPage.Wait();
-            //AccountDJILoginPage.WaitForAcceptAllButtonBeEnabled();
-            //AccountDJILoginPage.ClickAcceptAllButton();
             AccountDJILoginPage.Wait();
             AccountDJILoginPage.EnterEmail(correctEmail);
             AccountDJILoginPage.Wait();
@@ -33,7 +24,7 @@ namespace SeleniumTests.DJIStore
             StringAssert.Contains(expectedResult, actualResult);
         }
         [Test]
-        public void TC004_LoginWithoutReCaptchaVerification()
+        public void TC003_LoginWithoutReCaptchaVerification()
         {
             string expectedResult2 = "Please follow the prompts to complete the verify";
             string correctEmail = "abc@gmail.com";
@@ -41,17 +32,11 @@ namespace SeleniumTests.DJIStore
 
             AccountDJILoginPage.Open();
             AccountDJILoginPage.Wait();
-            //AccountDJILoginPage.WaitForAcceptAllButtonBeEnabled();
-            //AccountDJILoginPage.ClickAcceptAllButton();
-            AccountDJILoginPage.Wait();
             AccountDJILoginPage.EnterEmail(correctEmail);
             AccountDJILoginPage.Wait();
             AccountDJILoginPage.EnterPassword(incorrectPassword); 
-            //AccountDJILoginPage.WaitTillRecapchaBeActive();
-            //AccountDJILoginPage.ClickRecapcha();//neranda recaptCha elemento
             AccountDJILoginPage.Wait();
             AccountDJILoginPage.ClickLogIn();
-            //AccountDJILoginPage.WaitYourEmailIsIncorrectTextBeVisible();
             string actualResult = AccountDJILoginPage.GetFollowTheProptsToCompleteText();
 
             StringAssert.Contains(expectedResult2, actualResult);
