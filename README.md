@@ -3,10 +3,8 @@
 The final task for the Automatinis Testavimas course of Code Academy, where several automatic tests of DJI Store were performed.
 
 ***Preconditions:***
-1. User has opened the [DJI store](https://store.dji.com/lt).
-2. User has a valid account for the DJI store.
-3. User is logged in to the DJI store.
-4. Region settings: Lithuania (English / € EUR).
+1. User has Chrome profile for testing mode.
+2. Region settings: Lithuania (English / € EUR).
 
 ## Test Scenarios (TS), Test Cases (TC)
 
@@ -22,17 +20,18 @@ The final task for the Automatinis Testavimas course of Code Academy, where seve
   - **TC001.07:** Click View Cart Checkout
   - **TC001.08:** Verify that product in the cart is "DJI Mini 3 Fly More Combo (DJI RC-N1)"
 
-### TS002: Update and remove the item from the cart
+### TS002: LoginTests
 
-- **TC002:** Update "DJI Mini 3" quantity in the product cart
-  - **TC002.01:** Click on the "Cart" button in the top right corner of the page. Two items in the shopping cart are listed for the total sum of 1316 €
-  - **TC002.02:** Click on the "+" button next to quantity 2 of the "DJI Mini 3"
-  - **TC002.03:** Verify that two items are in the shopping cart
+- **TC002:** Login Without Password
+  - **TC002.01:** Enter email
+  - **TC002.02:** Click LogIn
+  - **TC002.03:** Verify that message "Password cannot be empty" will appear
 
-- **TC003:** Remove "DJI Mini 3" products from the cart
-  - **TC003.01:** Click on the "Cart" button in the top right corner of the page. [Product cart page](https://store.dji.com/lv/cart?from=store-nav) will open. The products removed from the shopping cart
-  - **TC003.02:** Click on the "Recycle bin" icon next to "DJI Mini 3" in the shopping cart
-  - **TC003.03:** Verify that the shopping cart is empty and the message "Your Shopping Cart is Empty" is displayed
+- **TC003:** Login Without ReCaptcha Verification
+  - **TC003.01:** Enter email
+  - **TC003.0:** Enter password
+  - **TC003.03:** Click LogIn
+  - **TC003.03:** Verify that message "Please follow the prompts to complete the verify" will appear
 
 ### TS003: Navigate to the "Refurbished Products" category
 
