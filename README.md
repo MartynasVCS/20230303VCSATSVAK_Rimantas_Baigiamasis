@@ -1,6 +1,6 @@
 # Final-Task-DJI-store-automatic-tests
 
-The final task for the Automatinis Testavimas course of Code Academy, where several automatic tests of DJI Store were performed.
+The final task for the Automatinis Testavimas course of Code Academy, where several automatic tests of [DJI Store](https://store.dji.com/lt) were performed.
 
 ***Preconditions:***
 1. User has Chrome profile for testing mode.
@@ -12,8 +12,8 @@ The final task for the Automatinis Testavimas course of Code Academy, where seve
 
 - **TC001:** Search for "DJI Mini 3"
   - **TC001.01:** Click the Search icon
-  - **TC001.02:** Select "DJI Mini 3" from the drop-down menu
-  - **TC001.03:** Click "DJI Mini 3"
+  - **TC001.02:** Input "DJI Mini 3" in search bar
+  - **TC001.03:** Click Search icon
   - **TC001.04:** Click "DJI Mini 3Fly More Combo (DJI RC-N1) 658 €" option
   - **TC001.05:** Click the button "Shop Now"
   - **TC001.06:** Click "Continue Without Coverage"
